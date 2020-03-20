@@ -16,5 +16,8 @@ export default gql`
       Likes: Int
       username: String
     ): Recipe
+
+    signupUser(username: String!, email: String!, password: String!): Auth
+    login(email: String!, password: String!): Auth
   }
 `;
