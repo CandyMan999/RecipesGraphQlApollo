@@ -29,3 +29,13 @@ export const SIGNUP_USER = gql`
     }
   }
 `;
+
+export const SIGNUP_FB = gql`
+  mutation($email: String!, $idToken: String!) {
+    signupFB(idToken: $idToken, email: $email) {
+      user {
+        facebookId
+      }
+    }
+  }
+`;

@@ -19,5 +19,7 @@ export default gql`
 
     signupUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
+    loginFacebook(idToken: String!): Auth
+    signupFB(idToken: String!, email: String!): Auth
   }
 `;

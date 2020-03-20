@@ -7,6 +7,7 @@ export const userDefs = gql`
     _id: ID
     username: String!
     password: String!
+    facebookId: String!
     email: String!
     joinDate: String
     favorites: [Recipe]

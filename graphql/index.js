@@ -18,6 +18,7 @@ export const resolvers = {
   Mutation: {
     addRecipe: recipeDataResolvers.Mutation.addRecipe,
     signupUser: sessionResolvers.Mutation.signup,
-    login: sessionResolvers.Mutation.login
+    login: sessionResolvers.Mutation.login,
+    signupFB: sessionResolvers.Mutation.signupFacebook
   }
 };

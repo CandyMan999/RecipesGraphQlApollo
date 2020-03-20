@@ -47,3 +47,9 @@ textarea {
   color: red;
   cursor: pointer;
 }
+
+.my-facebook-button-class {
+  color: red;
+  border: 20px;
+  background-color: turquoise;
+}

@@ -11,6 +11,7 @@ import "./index.css";
 import App from "./components/App";
 import Singin from "./components/Auth/Signin";
 import Singup from "./components/Auth/Signup";
+
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 
@@ -33,5 +34,6 @@ ReactDOM.render(
   <ApolloProvider client={client}>
     <Root />
   </ApolloProvider>,
+
   document.getElementById("root")
 );

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Mutation } from "react-apollo";
 import { SIGNUP_USER } from "../../queries";
+import LoginFB from "./LoginFB";
 
 class Signup extends Component {
   state = {
@@ -71,6 +72,7 @@ class Signup extends Component {
                   Submit
                 </button>
                 {error && <p>{error.message}</p>}
+                <LoginFB />
               </form>
             );
           }}
